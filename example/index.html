@@ -73,8 +73,8 @@
   <meta property="twitter:image" content="https://foxinsox.github.io/threevision/preview2.jpg">
 
 
-  <script src="https://unpkg.com/three"></script>
-  <script src='https://unpkg.com/dat.gui'></script>
+  <!-- <script src="https://unpkg.com/three"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r92/three.min.js" integrity="sha512-gXPzubVoiQ4B51n9Ew59YQxKYzihEyjWuf8DeAECOcOD/a/DtQN05POSnaL5KW2ObKbHzbNBG1kJM034sJd5sg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  <script src='https://unpkg.com/dat.gui'></script>
   <script src='https://mrdoob.github.io/stats.js/build/stats.min.js'></script>
   <script src='https://cdn.jsdelivr.net/npm/three@0.101.1/examples/js/controls/OrbitControls.js'></script>
   <script src="https://unpkg.com/threevision"></script>
@@ -129,7 +129,7 @@
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     camera.lookAt(0, 0, 0);
-    camera.position.z = 1000 / windowWidth * 280;
+    camera.position.z = 5000 / windowWidth * 280;
 
     // Optional: Create a light for shadow casting
     var light = new THREE.SpotLight(0xcccccc);
@@ -163,7 +163,8 @@
       height: Math.round(Math.min(window.innerHeight, window.innerWidth) * 0.8),
       width: Math.round(Math.min(window.innerHeight, window.innerWidth) * 0.8),
       mouseOverEffect: true,
-      vertical: false
+      vertical: false,
+      shadows: false
     }
     const materials = prepareMaterials();
     const threevision = new Threevision(threevisionConfig);
@@ -181,7 +182,7 @@
       this.speed = 1;
       this.vertical = false;
       this.mouseOverEffect = true;
-      this.shadows = true;
+      this.shadows = false;
       this.darkmode = false;
     }
 
