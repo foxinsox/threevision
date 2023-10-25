@@ -307,8 +307,9 @@
       };
 
       // Prepare some nice images as textures
+      const images = [ 'https://www.ikea.com/es/ca/images/products/pax-vik…acio-darmari-blanc-blanc__1197557_pe903579_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-mehamn-combinacio-darmari__1212499_pe910661_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-for…cio-darmari-blanc-mirall__0820473_pe775038_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-for…fecte-roure-tenyit-blanc__0991434_pe819453_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-aul…cio-darmari-blanc-mirall__1149038_pe883845_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-tys…acio-darmari-blanc-blanc__1080127_pe857885_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-combinacio-darmari-blanc__0780431_pe759955_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-farvik-combinacio-darmari__1080356_pe857988_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-com…fecte-roure-tenyit-blanc__0840345_pe778693_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-ber…fecte-roure-tenyit-blanc__0872843_pe781614_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-combinacio-darmari-blanc__0988425_pe818104_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-sva…blanc-blanc-efecte-paper__1195956_pe902664_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-meh…fecte-roure-tenyit-blanc__1149176_pe883873_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-gri…acio-darmari-blanc-blanc__1190126_pe900109_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-rei…rmari-blanc-verd-grisenc__1080151_pe857917_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-for…cio-darmari-blanc-mirall__0928647_pe789945_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-for…aheim-combinacio-darmari__1152486_pe885380_s5.jpg', 'https://www.ikea.com/es/ca/images/products/pax-meh…-dues-cares-blanc-mirall__1149174_pe883872_s5.jpg'];
 
-      
+      /*
       const images = [];
       // images.push("https://foxinsox.github.io/threevision/example/tropical-leaves-fruit-background_1024.jpg");
       // images.push("https://foxinsox.github.io/threevision/example/bird-vintage-background-1547020715cla_1024.jpg");
@@ -317,6 +318,7 @@
       images.push("https://foxinsox.github.io/threevision/example/00032-3309050492.png");
       images.push("https://foxinsox.github.io/threevision/example/00043-8943029.png");
       images.push("https://foxinsox.github.io/threevision/example/00076-1369769422.png");
+      */
       images.forEach((el) => {
         const texture = new THREE.TextureLoader().load(el);
         materials.push(new THREE.MeshBasicMaterial({ map: texture }));
